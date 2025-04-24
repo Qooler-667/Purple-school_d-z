@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  font-weight: 400;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+.header__list_item>a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.heroInput {
+  background-color: #1F2937;
+}
+
+.heroInput::placeholder {
+  font-size: 16px;
+  color: #fff;
+  opacity: .6;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 158%;
+}
+
+.date-box>p,
+.date-box>time,
+.creator-box span {
+  font-size: 14px;
+  opacity: .6;
+}
+
+.creator-box>p {
+  font-size: 16px;
+  line-height: 175%;
+}
+
+.section-text {
+  font-size: 20px;
+  line-height: 160%;
+}
+
+footer a {
+  font-size: 16px;
+  line-height: 175%;
+  opacity: .6;
+}
