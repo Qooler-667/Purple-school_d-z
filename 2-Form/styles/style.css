@@ -5,11 +5,10 @@
 
 /* --- --- --- */
 
-
 body {
   font-family: openSansRegular;
   font-weight: 400;
-  background: #F39494;
+  background: #f39494;
 }
 
 main {
@@ -59,8 +58,7 @@ button {
   color: #fff;
   background-color: #089fe0;
 }
-
-#agree~label {
+.agreeField label {
   font-size: 14px;
   color: #666666;
 }

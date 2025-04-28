@@ -30,22 +30,21 @@ footer {
 footer a {
   font-size: 16px;
   line-height: 175%;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .header {
   padding: 20px;
   margin: 50px 0;
-
 }
 
-.header__list_item>a {
+.header__list_item > a {
   font-size: 18px;
   text-decoration: none;
 }
 
 .heroInput {
-  background-color: #1F2937;
+  background-color: #1f2937;
   width: 224px;
   height: 40px;
   border-radius: 100px;
@@ -54,21 +53,16 @@ footer a {
 .heroInput::placeholder {
   font-size: 16px;
   color: #fff;
-  opacity: .6;
-}
-
-.date-box>p,
-.date-box>time,
-.creator-box span {
-  font-size: 14px;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .date-box {
   margin-bottom: 14px;
+  font-size: 14px;
+  opacity: 0.6;
 }
 
-.creator-box>p {
+.creator-box > p {
   font-size: 16px;
   line-height: 175%;
 }
