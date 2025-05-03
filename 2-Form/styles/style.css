@@ -3,17 +3,52 @@
   src: url(/2-Form/fonts/OpenSans-Regular.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input,
+button,
+:active,
+:hover,
+:focus {
+  outline: none;
+  border: none;
+}
+
+label:not([for="admitt"]):not([for="agree"]) {
+  display: none;
+}
+
+input,
+button,
+::placeholder {
+  font-family: inherit;
+}
+
+.point {
+  cursor: pointer;
+}
+
 /* --- --- --- */
 
 body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f39494;
   font-family: openSansRegular;
   font-weight: 400;
-  background: #f39494;
 }
 
 main {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 72px 93px;
+  border-radius: 10px;
   background: #fffefe;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 h2 {
@@ -22,9 +57,41 @@ h2 {
   color: #333333;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
 label {
   font-size: 18px;
   color: #666666;
+}
+input:not(#admitt) {
+  padding: 10px;
+  align-items: center;
+}
+
+button {
+  font-size: 18px;
+  color: #fff;
+  background-color: #089fe0;
+}
+
+input,
+button {
+  border-radius: 5px;
+}
+
+a {
+  font-size: 14px;
+  color: #089fe0;
+}
+
+#company,
+#email {
+  width: 100%;
+  height: 100%;
 }
 
 #admitt {
@@ -32,6 +99,7 @@ label {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #089fe0;
+  background-color: transparent;
 }
 
 #company::placeholder {
@@ -41,29 +109,60 @@ label {
   color: #333;
 }
 
-::placeholder {
-  font-style: italic;
-  font-size: 16px;
-  color: #999;
-}
-
 #name,
 #email,
 #surname {
   background-color: #f5f5f5;
 }
 
-button {
-  font-size: 18px;
-  color: #fff;
-  background-color: #089fe0;
+::placeholder {
+  font-style: italic;
+  font-size: 16px;
+  color: #999;
 }
+
+.form__title {
+  text-align: center;
+  margin-bottom: 47px;
+}
+
+.input-wrapper,
+button {
+  width: 395px;
+  height: 45px;
+}
+
+.input-wrapper:first-child {
+  border: 1px solid #f5f5f5;
+}
+
+.input-wrapper:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper:nth-child(2) input {
+  width: calc(100% / 2);
+  height: 100%;
+}
+
+.line {
+  border: 1px solid #ffffff;
+  width: 44px;
+  height: 0;
+  margin: -22px;
+  transform: rotate(90deg);
+}
+
+.agreeField {
+  width: 371px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .agreeField label {
   font-size: 14px;
   color: #666666;
-}
-
-a {
-  font-size: 14px;
-  color: #089fe0;
 }
