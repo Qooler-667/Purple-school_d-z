@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "SanFrancisco";
+  src: url(/3-Finio/fonts/SFProText-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/3-Finio/fonts/Inter-VariableFont_opsz\,wght.woff2);
+}
+
+/* -- -- -- -- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -- -- -- -- */
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "SanFrancisco", sans-serif;
+  --line-14: 140%;
+  --line-12: 120%;
+  /* -- -- -- -- */
+  --base-white: #fff;
+  --base-black: #000;
+  --text-black: #4e5d7c;
+  --alternate-black: rgba(78, 93, 124, 0.5);
+  --alternate-white: rgba(255, 255, 255, 0.6);
+  --alternate-line: rgba(78, 93, 124, 0.08);
+  --bg-blue: #357efe;
+  --bg-green: #1abc9c;
+  --bg-yellow: #ffc736;
+  /* -- -- -- -- */
+  --border-8: 8px;
+  --shadow-card: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+}
+
+/* -- -- -- -- */
+body {
+  font-family: var(--font-family);
+  font-style: normal;
+  background: var(--base-white);
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--base-black);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--base-black);
+}
+
+p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--alternate-black);
+}
+
+.rate--wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 24px;
+  margin-bottom: 50px;
+}
+
+.card__prime {
+  width: 124px;
+  height: 29px;
+  padding: 4px 16px;
+  white-space: nowrap;
+  color: var(--base-white);
+  background: var(--bg-green);
+  border-radius: var(--border-8);
+}
+
+.card__btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 63px;
+  text-align: center;
+  border-radius: 47px;
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.4;
+  white-space: nowrap;
+  color: var(--base-white);
+  background: var(--bg-blue);
+}
