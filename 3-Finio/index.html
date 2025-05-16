@@ -7,6 +7,7 @@
   <title>Finio</title>
 
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/components.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -16,106 +17,122 @@
     <div class="rate--wrapper">
       <div class="rate__heading">
         <h2>Тарифы</h2>
-        <p>Все тарифы имеют полный функционал и отличаются только количеством месяцев и выгодой</p>
-      </div><!-- heading -->
+        <p class="rate__heading_text">Все тарифы имеют полный функционал и отличаются только количеством месяцев и
+          выгодой</p>
+      </div><!-- rate__heading -->
+
       <div class="rate__cards--wrapper">
         <div class="rate__cards">
-
-          <!-- ITEM-1 -->
+          <!-- CARD--1 -->
           <div class="rate__card">
             <div class="rate__card_top">
-              <div class="card__prime">
-                Выгода 0%
-              </div>
-              <div class="card__title">
-                <h4>1 месяц</h4>
-              </div>
-              <div class="card__text">
-                <p>Тариф подойдёт тем, кто ведёт<br> краткосрочные проекты</p>
-              </div>
-            </div><!-- rate-card-top -->
 
-            <dl class="card__body">
+              <div>
+                <article class="card__top_prime">Выгода
+                  <span>0%</span>
+                </article>
+              </div>
+
+              <div>
+                <h4 class="card__top_title">1 месяц</h4>
+              </div>
+
+              <div>
+                <p class="card__top_text">Тариф подойдёт тем, кто ведёт краткосрочные проекты
+                </p>
+              </div>
+            </div><!-- rate__card_top -->
+
+            <dl class="rate__card_body">
               <dt>Общая стоимость</dt>
               <dd>1 990 ₽</dd>
-              <hr class="card__body_line">
               <dt>Ваша выгода</dt>
-              <dd class="yellow-profit yellow-not">0 ₽</dd>
-              <hr class="card__body_line">
+              <dd><span>0 ₽</span></dd>
               <dt>Стоимость месяца</dt>
               <dd>1 990 ₽/мес</dd>
-            </dl>
+            </dl><!-- rate__card_body -->
 
-            <div class="rate__card_btn">
-              <a class="card__btn" href="#">Бесплатно 14 дней</a>
+            <div class="rate__btn--wrapper">
+              <a class="rate__card_btn btn" href="#">Бесплатно 14 дней</a>
             </div>
-          </div><!-- rate-card -->
 
-          <!-- ITEM-2 -->
+          </div><!-- rate__card -->
+
+          <!-- CARD--2 -->
           <div class="rate__card">
             <div class="rate__card_top">
-              <div class="card__prime">
-                Выгода 25%
-              </div>
-              <div class="card__title">
-                <h4>6 месяцев</h4>
-              </div>
-              <div class="card__text">
-                <p>Тариф подойдёт для тех, кто<br> уверенно ведёт финансовый учёт</p>
-              </div>
-            </div><!-- rate-card-top -->
 
-            <dl class="card__body">
+              <div>
+                <article class="card__top_prime">Выгода
+                  <span>25%</span>
+                </article>
+              </div>
+
+              <div>
+                <h4 class="card__top_title">6 месяцев</h4>
+              </div>
+
+              <div>
+                <p class="card__top_text">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
+                </p>
+              </div>
+            </div><!-- rate__card_top -->
+
+            <dl class="rate__card_body">
               <dt>Общая стоимость</dt>
-              <dd>8 940 ₽ ₽</dd>
-              <hr class="card__body_line">
+              <dd>8 940 ₽</dd>
               <dt>Ваша выгода</dt>
-              <dd class="yellow-profit">3 000 ₽</dd>
-              <hr class="card__body_line">
+              <dd><span class="yellow-span">3 000 ₽</span></dd>
               <dt>Стоимость месяца</dt>
               <dd>1 490 ₽/мес</dd>
-            </dl>
+            </dl><!-- rate__card_body -->
 
-            <div class="rate__card_btn">
-              <a class="card__btn" href="#">Бесплатно 14 дней</a>
+            <div class="rate__btn--wrapper">
+              <a class="rate__card_btn btn" href="#">Бесплатно 14 дней</a>
             </div>
-          </div><!-- rate-card -->
+          </div><!-- rate__card -->
 
-          <!-- ITEM-3 -->
+          <!-- CARD--3 -->
           <div class="rate__card">
             <div class="rate__card_top">
-              <div class="card__prime">
-                Выгода 50%
-              </div>
-              <div class="card__title">
-                <h4>12 месяцев</h4>
-              </div>
-              <div class="card__text">
-                <p>Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет сэкономить</p>
-              </div>
-            </div><!-- rate-card-top -->
 
-            <dl class="card__body">
+              <div>
+                <article class="card__top_prime">Выгода
+                  <span>50%</span>
+                </article>
+              </div>
+
+              <div>
+                <h4 class="card__top_title">12 месяцев</h4>
+              </div>
+
+              <div>
+                <p class="card__top_text">Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и хочет сэкономить
+                </p>
+              </div>
+            </div><!-- rate__card_top -->
+
+            <dl class="rate__card_body">
               <dt>Общая стоимость</dt>
               <dd>11 880 ₽</dd>
-              <hr class="card__body_line">
               <dt>Ваша выгода</dt>
-              <dd class="yellow-profit">12 000 ₽</dd>
-              <hr class="card__body_line">
+              <dd><span class="yellow-span">12 000 ₽</span></dd>
               <dt>Стоимость месяца</dt>
               <dd>990 ₽/мес</dd>
-            </dl>
+            </dl><!-- rate__card_body -->
 
-            <div class="rate__card_btn">
-              <a class="card__btn" href="#">Бесплатно 14 дней</a>
+            <div class="rate__btn--wrapper">
+              <a class="rate__card_btn btn" href="#">Бесплатно 14 дней</a>
             </div>
-          </div><!-- rate-card -->
+          </div><!-- rate__card -->
 
-        </div><!-- rate__cards--wrapper -->
+        </div><!-- rate__cards -->
 
-      </div><!-- container -->
+      </div><!-- rate__cards--wrapper -->
 
-    </div><!-- wrapper -->
+
+    </div><!-- rate--wrapper -->
+
   </section>
 
 </body>

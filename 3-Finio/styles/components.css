@@ -1,0 +1,7 @@
+.rate__card_btn {
+  display: inline-block;
+  padding: 12px 63.5px;
+  border-radius: 47px;
+  background: var(--bg-blue);
+  color: var(--base-white);
+}
