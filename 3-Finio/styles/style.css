@@ -191,12 +191,15 @@
     text-align: start;
     margin-bottom: 32px;
   }
+
   .rate__cards {
     grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
   }
+
   .rate__card_top {
     margin-bottom: 14px;
   }
+
   .rate__card_body {
     margin-bottom: 16px;
   }
