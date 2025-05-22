@@ -1,206 +1,187 @@
-.rate--wrapper {
-  max-width: 1440px;
-  padding: 50px 24px;
-  margin-inline: auto;
+@import url(./header.css);
+@import url(./footer.css);
+
+/* -- -- -- -- --  */
+
+.hero-section {
+  background: var(--base-blue);
+  position: relative;
+  z-index: -1;
 }
 
-.rate__heading {
-  text-align: center;
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-white);
+  clip-path: polygon(0% 87%, 100% 55%, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+.hero__container {
+  padding-block: 58px 40px;
+  display: flex;
+}
+
+.hero--wrapper {
+  display: flex;
+  margin-right: -100px;
+}
+
+.hero__left {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  margin-right: -20px;
+}
+
+.hero__left h1 {
   margin-bottom: 40px;
 }
 
-.rate__heading h2 {
-  margin-bottom: 24px;
+.hero__left_btn {
+  display: flex;
+  margin-bottom: 80px;
 }
 
-.rate__heading p {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.4;
-  word-spacing: 1.7px;
-  color: var(--text-black);
+.hero__left_icons {
+  max-width: 334px;
+  height: 85px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
 }
 
-.rate__cards--wrapper {
-  max-width: 1156px;
-  margin-inline: auto;
+.hero__icon {
+  background-size: contain;
 }
 
-.rate__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
-  gap: 24px;
+.hero__icon1 {
+  background-image: url(../images/wildberries.png);
+  width: 205px;
+  height: 24px;
 }
 
-.rate__card {
-  max-height: 507px;
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  padding: 48px 40px;
-  border-radius: var(--border-8);
-  box-shadow: var(--shadow-card);
+.hero__icon2 {
+  background-image: url(../images/ozon.png);
+  width: 110px;
+  height: 24px;
 }
 
-.rate__card_top {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 15px;
-  margin-bottom: 32px;
+.hero__icon3 {
+  background-image: url(../images/market.png);
+  width: 153px;
+  height: 35px;
 }
 
-.card__top_prime {
-  display: inline-block;
-  padding: 4px 16px;
-  border-radius: var(--border-8);
-  background: var(--bg-green);
-  color: var(--base-white);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.4;
+.hero__icon4 {
+  background-image: url(../images/AliExpress.png);
+  width: 155px;
+  height: 37px;
 }
 
-.card__top_prime span {
-  font-weight: 800;
+/* @MEDIA */
+
+@media (max-width: 1640px) {
+  .hero--wrapper {
+    margin-right: 0px;
+  }
 }
 
-.rate__card:first-child .card__top_prime {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.card__top_text {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.4;
-  word-spacing: 1.7px;
-  color: var(--text-black);
-}
-
-.rate__card_body {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  background: var(--alternate-line);
-  align-items: center;
-  row-gap: 1px;
-  margin-bottom: 25px;
-}
-
-.rate__card_body dt,
-.rate__card_body dd {
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 1.2;
-  padding: 15.75px 0;
-  color: var(--text-black);
-  background: rgb(255, 255, 255);
-  white-space: nowrap;
-}
-
-.yellow-span {
-  padding: 8px 16px;
-  border-radius: var(--border-8);
-  background: var(--bg-yellow);
-  position: relative;
-  left: -16px;
-}
-
-.rate__card_body p {
-  letter-spacing: 0.3px;
-}
-
-.rate__btn--wrapper {
-  text-align: center;
-}
-
-/* -- CARD-3 -- */
-.rate__card:nth-child(3) .rate__card_top {
-  margin-bottom: 18px;
-}
-
-.rate__card:nth-child(3) .card__top_title {
-  color: var(--base-white);
-}
-
-.rate__card:nth-child(3) .card__top_text {
-  color: var(--alternate-white);
-}
-
-.rate__card:nth-child(3) .rate__card_body {
-  margin-bottom: 14px;
-  background: rgba(255, 255, 255, 0.16);
-}
-
-.rate__card:nth-child(3),
-.rate__card:nth-child(3) .rate__card_body dt,
-.rate__card:nth-child(3) .rate__card_body dd {
-  background: var(--bg-blue);
-  color: var(--base-white);
-}
-
-.rate__card:nth-child(3) .rate__card_btn {
-  background: var(--base-white);
-  color: var(--bg-blue);
-}
-
-/* -- @-MEDIA -- */
-@media (max-width: 1024px) {
-  .rate__cards {
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
-    justify-content: center;
+@media (max-width: 1440px) {
+  .header--wrapper {
+    border-bottom: 1px solid var(--alter-white016);
   }
 
-  .rate__card_btn {
-    width: 280px;
-    padding: 12px 58px;
+  .hero--wrapper {
+    flex-direction: column;
+    row-gap: 30px;
+    margin-inline: auto;
   }
 
-  .rate__card {
-    padding: 48px 23px 48px 24px;
+  .hero__container {
+    padding-block: 32px;
+  }
+
+  .hero__left {
+    display: flex;
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+    align-items: center;
+  }
+
+  .hero__left h1 {
+    margin-bottom: 32px;
+  }
+
+  .hero__left_btn {
+    margin-bottom: 30px;
+  }
+
+  .hero__right {
+    text-align: center;
+  }
+
+  .hero__right img {
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .rate__cards {
-    grid-template-columns: repeat(auto-fit, minmax(348px, 550px));
+  .hero-section::before {
+    clip-path: polygon(0% 98%, 100% 89%, 100% 100%, 0% 100%);
   }
 
-  .rate__card_top {
-    gap: 0;
+  .hero--wrapper {
+    padding-bottom: 70px;
+  }
+  .hero__left {
+    width: 100%;
+    padding-top: 0;
   }
 
-  .rate__card:first-child .card__top_prime {
+  .hero__left_btn {
+    margin-bottom: 55px;
+  }
+
+  .hero__left_icons {
+    width: 264px;
+    height: 68px;
+  }
+
+  .hero__icon1 {
+    width: 162px;
+    height: 19px;
+  }
+
+  .hero__icon2 {
+    width: 87px;
+    height: 19px;
+  }
+
+  .hero__icon3 {
+    width: 120px;
+    height: 29px;
+  }
+
+  .hero__icon4 {
+    width: 122px;
+    height: 29px;
+  }
+
+  .hero__right {
     display: none;
-  }
-
-  .card__top_prime {
-    margin-bottom: 16px;
-  }
-
-  h2 {
-    font-size: 36px;
-  }
-
-  h4 {
-    margin-bottom: 16px;
   }
 }
 
-@media (max-width: 425px) {
-  .rate__heading {
+@media (max-width: 375px) {
+  .hero__left {
+    align-items: start;
     text-align: start;
-    margin-bottom: 32px;
-  }
-
-  .rate__cards {
-    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
-  }
-
-  .rate__card_top {
-    margin-bottom: 14px;
-  }
-
-  .rate__card_body {
-    margin-bottom: 16px;
   }
 }
