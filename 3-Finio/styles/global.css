@@ -57,20 +57,30 @@ li {
 body {
   font-family: var(--font-family);
   font-weight: 500;
-  background: var(--base-blue);
 }
 
 h1 {
-  font-family: var(--font-family);
   font-size: 40px;
   font-weight: 800;
-  line-height: var(--lineH-12);
-  color: var(--base-white);
-  letter-spacing: 0.7px;
+  letter-spacing: 0.04rem;
 }
 
 h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.091rem;
+}
+
+h1,
+h2,
+h3 {
   font-family: var(--font-family);
+  line-height: var(--lineH-12);
 }
 
 .container {
@@ -82,5 +92,10 @@ h2 {
 @media (max-width: 768px) {
   h1 {
     font-size: 32px;
+  }
+
+  h3 {
+    font-size: 32px;
+    letter-spacing: 1.1px;
   }
 }
