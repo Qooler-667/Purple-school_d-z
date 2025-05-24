@@ -38,7 +38,7 @@
 
   .header--wrapper {
     padding-block: 24px 19px;
-    border-bottom: 1px solid var(--alter-line016);
+    /* border-bottom: 1px solid var(--alter-line016); */
   }
 }
 

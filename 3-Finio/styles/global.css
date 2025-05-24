@@ -25,6 +25,10 @@ li {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 /* -- -- -- -- */
 
 :root {
@@ -51,7 +55,10 @@ li {
   --bg-footer: #1a1d25;
   /* -- -- -- -- */
   --border-8: 8px;
+  --border-slider-mob: 4px;
+  --border-slider: 13px;
   --shadow-card: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+  --shadow-slider: 0 0 26px 0 rgba(78, 93, 124, 0.32);
 }
 
 body {
@@ -68,6 +75,8 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 1.2px;
 }
 
 h3 {
@@ -92,6 +101,10 @@ h3 {
 @media (max-width: 768px) {
   h1 {
     font-size: 32px;
+  }
+
+  h2 {
+    font-size: 36px;
   }
 
   h3 {
