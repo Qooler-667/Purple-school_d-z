@@ -15,13 +15,23 @@
   border-radius: 34px;
   font-size: 17px;
   font-weight: 800;
+  text-align: center;
   line-height: var(--lineH-14);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .white-btn {
   background: var(--base-white);
   color: var(--base-blue);
+}
+
+.blue-btn {
+  padding: 12px 63px;
+  border-radius: 47px;
+  background: var(--base-blue);
+  color: var(--base-white);
+  white-space: nowrap;
 }
 
 /* header-burger */
@@ -32,6 +42,7 @@
   align-items: center;
   justify-content: center;
   display: none;
+  cursor: pointer;
 }
 
 .burger-btn > span {
@@ -65,6 +76,24 @@
   width: 18px;
   bottom: 8px;
 }
+
+/* slider-btn */
+.slider-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--alter-white05);
+  cursor: pointer;
+}
+
+.review__slider_btn:hover {
+  background: var(--base-white);
+}
+
 /* -- -- -- -- */
 
 @media (max-width: 1024px) {

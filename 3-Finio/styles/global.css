@@ -51,12 +51,13 @@ img {
   --alter-line008: rgba(78, 93, 124, 0.08);
   --alter-line016: rgba(255, 255, 255, 0.16);
   --bg-green: #1abc9c;
-  --bg-yellow: #ffc736;
+  --bg-mark: #ffc736;
   --bg-footer: #1a1d25;
   /* -- -- -- -- */
   --border-8: 8px;
   --border-slider-mob: 4px;
   --border-slider: 13px;
+  --border-16: 16px;
   --shadow-card: 0 0 32px 0 rgba(78, 93, 124, 0.16);
   --shadow-slider: 0 0 26px 0 rgba(78, 93, 124, 0.32);
 }
@@ -85,9 +86,16 @@ h3 {
   letter-spacing: 0.091rem;
 }
 
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: var(--lineH-12);
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-family);
   line-height: var(--lineH-12);
 }
@@ -108,7 +116,11 @@ h3 {
   }
 
   h3 {
-    font-size: 32px;
-    letter-spacing: 1.1px;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+  }
+
+  h4 {
+    font-size: 24px;
   }
 }
