@@ -1,0 +1,147 @@
+.header__logo,
+.footer__logo {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--base-white);
+  line-height: var(--lineH-14);
+  text-transform: uppercase;
+}
+
+/* buttons */
+
+.btn {
+  display: block;
+  padding: 12px 32px;
+  border-radius: 34px;
+  font-size: 17px;
+  font-weight: 800;
+  text-align: center;
+  line-height: var(--lineH-14);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.white-btn {
+  background: var(--base-white);
+  color: var(--base-blue);
+}
+
+.blue-btn {
+  padding: 12px 63px;
+  border-radius: 47px;
+  background: var(--base-blue);
+  color: var(--base-white);
+  white-space: nowrap;
+}
+
+/* header-burger */
+.burger-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  cursor: pointer;
+}
+
+.burger-btn > span {
+  display: flex;
+  width: 24px;
+  height: 3px;
+  position: relative;
+}
+
+.burger-btn > span::before,
+.burger-btn > span::after {
+  content: "";
+  height: 3px;
+  display: flex;
+  position: absolute;
+}
+
+.burger-btn > span,
+.burger-btn > span::before,
+.burger-btn > span::after {
+  background: var(--base-white);
+  border-radius: var(--border-8);
+}
+
+.burger-btn > span::before {
+  width: 15px;
+  top: 8px;
+}
+
+.burger-btn > span::after {
+  width: 18px;
+  bottom: 8px;
+}
+
+/* slider-btn */
+.slider-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--alter-white05);
+  cursor: pointer;
+}
+
+.review__slider_btn:hover {
+  background: var(--base-white);
+}
+
+/* -- -- -- -- */
+
+@media (max-width: 1024px) {
+  .header__btn {
+    display: none;
+  }
+
+  .burger-btn {
+    display: flex;
+    margin-right: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 23px;
+  }
+}
+@media (max-width: 425px) {
+  .burger-btn {
+    display: flex;
+    margin-right: 0;
+  }
+
+  .burger-btn > span,
+  .burger-btn > span::before,
+  .burger-btn > span::after {
+    height: 2px;
+  }
+
+  .burger-btn > span {
+    width: 20px;
+  }
+
+  .burger-btn > span::before {
+    width: 12px;
+    top: 6px;
+  }
+
+  .burger-btn > span::after {
+    width: 16px;
+    bottom: 6px;
+  }
+}
+
+@media (max-width: 374.9px) {
+  .btn {
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

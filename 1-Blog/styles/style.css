@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  font-weight: 400;
+  color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 158%;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+}
+
+footer {
+  margin: 77px 0;
+}
+
+footer a {
+  font-size: 16px;
+  line-height: 175%;
+  opacity: 0.6;
+}
+
+.header {
+  padding: 20px;
+  margin: 50px 0;
+}
+
+.header__list_item > a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.heroInput {
+  background-color: #1f2937;
+  width: 224px;
+  height: 40px;
+  border-radius: 100px;
+}
+
+.heroInput::placeholder {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.date-box {
+  margin-bottom: 14px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.creator-box > p {
+  font-size: 16px;
+  line-height: 175%;
+}
+
+.creator-box {
+  margin-bottom: 28px;
+}
+
+.img-wrapper {
+  margin-bottom: 69px;
+}
+
+.section-text {
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.section-text:first-child {
+  margin-bottom: 33px;
+}

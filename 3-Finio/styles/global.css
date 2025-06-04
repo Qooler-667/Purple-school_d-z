@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "SanFrancisco";
+  src: url(/3-Finio/fonts/SFProText-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/3-Finio/fonts/Inter-VariableFont_opsz\,wght.woff2);
+}
+
+/* -- -- -- -- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+/* -- -- -- -- */
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "SanFrancisco", sans-serif;
+  --lineH-14: 140%;
+  --lineH-12: 120%;
+  /* -- -- -- -- */
+  --base-white: #fff;
+  --base-black: #000;
+  --base-blue: #357efe;
+  --text-black: #4e5d7c;
+  --alter-black: rgba(78, 93, 124, 0.5);
+  --alter-white05: rgba(255, 255, 255, 0.5);
+  --alter-white06: rgba(255, 255, 255, 0.6);
+  --alter-white07: rgba(255, 255, 255, 0.7);
+  --alter-white08: rgba(255, 255, 255, 0.8);
+  --alter-white008: rgba(255, 255, 255, 0.08);
+  --alter-white016: rgba(255, 255, 255, 0.16);
+  --alter-line008: rgba(78, 93, 124, 0.08);
+  --alter-line016: rgba(255, 255, 255, 0.16);
+  --bg-green: #1abc9c;
+  --bg-mark: #ffc736;
+  --bg-footer: #1a1d25;
+  /* -- -- -- -- */
+  --border-8: 8px;
+  --border-slider-mob: 4px;
+  --border-slider: 13px;
+  --border-16: 16px;
+  --shadow-card: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+  --shadow-slider: 0 0 26px 0 rgba(78, 93, 124, 0.32);
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.04rem;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: 1.2px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 0.091rem;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: var(--lineH-12);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family);
+  line-height: var(--lineH-12);
+}
+
+.container {
+  max-width: 1440px;
+  padding-inline: 24px;
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 36px;
+    letter-spacing: 1.2px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+}
