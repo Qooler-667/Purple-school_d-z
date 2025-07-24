@@ -28,17 +28,17 @@ function convert(sum, from, to) {
 function convert1(sum, from, to) {
   if (from === "RUB" && to === "USD") {
     return sum / 78.32;
-  }
-  if (from === "USD" && to === "RUB") {
+  } else if (from === "USD" && to === "RUB") {
     return sum * 78.32;
-  }
-  if (from === "RUB" && to === "EUR") {
+  } else if (from === "RUB" && to === "EUR") {
     return sum / 91.5;
-  }
-  if (from === "EUR" && to === "RUB") {
+  } else if (from === "EUR" && to === "RUB") {
     return sum * 91.5;
+  } else if (from === "USD" && to === "EUR") {
+    return sum * 0.85;
+  } else if (from === "EUR" && to === "USD") {
+    return sum / 0.85;
   } else {
-    return "Введите поддерживаемые валюты: RUB, USD, EUR.";
+    return null;
   }
 }
-console.log(convert1(100, "RUB", "USD")); // 1.276
