@@ -699,14 +699,13 @@ mark {
 
 .review__slider_slides {
   display: flex;
-  height: 438px;
 }
 
 .review__slides_slide {
   width: 100%;
   height: 100%;
   background-image: url(../images/review-img.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -943,6 +942,7 @@ mark {
 
   .review__slider--wrapper {
     width: 100%;
+    padding: 20px;
   }
 
   .review__slider_overflow {
